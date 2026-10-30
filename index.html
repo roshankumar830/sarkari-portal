@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarkari Result</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    
+
+}
+
+.header{
+    /* background-color:#ab183d; */
+    background: linear-gradient(360deg,rgb(24, 198, 59),rgb(247, 246, 244),rgb(251, 8, 4));
+    color:white;
+    padding:20px 0;
+    max-width:1010px;
+    margin:0 auto;
+    border-bottom:  10px solid #26038e;
+    border-top: 10px solid rgb(19, 17, 19);
+
+}
+
+.header:hover{
+    background: black;
+    border-bottom:  10px solid #fa0536;
+    border-top: 10px solid red;
+
+
+
+}
+
+.title h1:hover{
+   color: white;
+
+   
+
+}
+
+
+
+
+.header-container{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+
+.logo img{
+    padding:10px 0;
+    float:left;
+    margin-left:20px;
+    animation: rotateLogo 3s linear infinite;
+    /* box-shadow: 4px 3px 10px rgb(240, 2, 2),inset 10px 4px 10px #0000ff; */
+    width: 144px;
+
+    border-radius: 200px;
+}
+
+.logo img:hover{
+    animation-play-state: paused;
+
+}
+
+@keyframes rotateLogo{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.title{
+    flex:1;
+    text-align:center;
+}
+
+.title h1{
+    font-size:48px;
+    font-weight:bold;
+    color: rgb(4, 69, 209);
+    
+    
+}
+
+
+.title h4{
+    font-size:22px;
+    font-weight:bold;
+    
+}
+
+.navbar{
+    background:black;
+    max-width:1010px;
+    margin:0 auto;
+    border:2px solid #080606;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    
+    
+}
+
+.navbar ul li{
+    flex:1;
+    text-align:center;
+    border-left:1px solid rgb(244, 241, 241);
+}
+
+
+.navbar ul li:last-child{
+    border-left:none;
+    border: 4px double rgb(249, 20, 188);
+    border-radius: 5px;
+    
+}
+
+.navbar ul li:last-child:hover{
+    border-right:none;
+    border: 2px solid red;
+    border-radius: 12px;
+    box-shadow: 0px 10px 7px rgb(38, 0, 255);
+    
+}
+
+
+
+.navbar ul li:first-child{
+    border-right:none;
+    border: 4px dotted red;
+    
+}
+
+
+
+.navbar ul li a{
+    display:block;
+    padding:14px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+.navbar :hover{
+    transform:translateY(-2px);
+    border: none;
+    color: red;
+
+
+}
+
+h2{
+    font-size: 18px;
+    
+}
+
+h2 a{
+    color: #100ceb;
+    text-decoration: none;
+    border-bottom: 2px dotted blue;
+
+}
+
+.scroll{
+    overflow: hidden;
+    max-width: 1010px;
+  
+}
+
+.scroll-content{
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    /* animation: move 10s linear infinite; */
+}
+
+.scroll-content:hover{
+    animation-play-state: paused;
+    
+
+}
+
+.scroll-content a{
+    max-width: 1010px;
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #0404e9;
+    border-right: 8px double rgb(109, 107, 107);
+    margin-right: none;
+    
+}
+
+.scroll-content :last-child{
+   border-right: none;
+}
+
+.scroll a:hover{
+    color: red;
+}
+
+.education{
+    color: #0404e9;
+}
+
+
+/* @keyframes move {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+} */
+
+
+.marquee{
+overflow: hidden;
+    max-width: 1010px;
+    
+}
+
+.marquee1{
+     display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    animation: marquee 18s linear infinite;
+    
+
+
+}
+
+.marquee1:hover{
+        animation-play-state: paused;
+
+}
+
+.marquee1 a{
+     max-width: 1010px;
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+    border-right: 8px double rgb(94, 93, 93);
+    /* margin-left: 1px; */
+    margin-right: none;
+      
+
+}
+
+.marquee1 a:last-child{
+    border-right: none;
+}
+
+
+
+
+.marquee :hover{
+    text-decoration:underline;
+    
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }}
+
+
+.applay{
+    max-width:1020px;
+    margin:0 auto;
+    margin-top: 100px;
+    /* border: 2px solid red; */
+    /* box-shadow: 9px 9px 8px rgb(32, 18, 225); */
+
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    /* border: 4px solid rgb(241, 241, 237); */
+}
+
+.grid div{
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-weight:bold;
+    transition:0.3s;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(2, 29, 72);
+    
+}
+.grid div a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    display:block;
+    width:100%;
+    /* box-shadow: 0px 2px 8px black;//ese ham railaway par parbhav parega  */
+}
+
+.box1{ background:#ff1f1f;
+ }
+
+ .box1:first-child{
+    border: 3px dotted rgb(248, 248, 249);
+    /* background-color: #0404e9; */
+    box-shadow: 10px 3px 10px rgb(14, 7, 7);
+ }
+.box2{ background:#0b8f2f; }
+.box3{ background:#c400a7; }
+.box4{ background:#0a0a8f; }
+.box5{ background:#008fb3; }
+.box6{ background:#ff7a00; }
+.box7{ background:#8a7f00; }
+.box8{ background:#8b0000; }
+
+.grid div:hover{
+    transform:translateY(-5px);
+     box-shadow: 0px 10px 2px rgb(1, 11, 14);
+    border-radius: 10px;
+
+    
+}
+
+   .main{
+    width:1010px;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    
+    
+}
+
+.column{
+    width:32%;
+    border:2px solid #bc0707;
+    
+    
+}
+
+.heading{
+    background:#ab183d;
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+    text-align:center;
+    padding:8px 0;
+    
+}
+
+.content{
+    /* background-color:black; */
+    color: rgb(17, 14, 14);
+    /* background-image: url("rosahn.jpg"); */
+    /* background-size: cover; */
+    padding:15px 25px;
+    
+}
+
+.content ul li{
+    margin-bottom:12px;
+        /* list-style: none; */
+    
+        
+        
+
+
+}
+
+.content ul li a{
+    color:rgb(56, 15, 220);
+    font-size: 21px;
+    /* font-weight: bold; */
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-weight: bold; */
+    text-decoration: underline;
+
+}    
+
+.content ul li a:hover{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+
+    
+
+}
+
+.button1{
+    background:linear-gradient(360deg,blue,rgb(4, 55, 94));
+    padding: 10px;
+    width: 110px;
+    border-radius: 30px;
+    border: 2px solid rgb(4, 65, 186);
+    box-shadow: 0px 9px 10px black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 185px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.button1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.button1:hover a{
+    color: red;   
+}
+
+
+.button2{
+    background:linear-gradient(360deg,rgb(43, 27, 29),rgb(237, 26, 135));
+    padding: 10px;
+    width: 110px;
+    border-radius: 30px;
+    border: 2px solid rgb(186, 4, 7);
+    box-shadow: 10px 0 0  rgb(13, 12, 20);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 174px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.button2 a{
+    text-decoration: none;
+    color: rgb(8, 230, 234);
+    
+}
+
+.button2:hover a{
+    color: #e1e90b;
+}
+
+
+
+
+.button3{
+    background:linear-gradient(360deg,rgb(8, 99, 204),rgb(10, 27, 25));
+    padding: 10px;
+    width: 110px;
+    border-radius: 30px;
+    border: 2px solid rgb(4, 107, 186);
+    box-shadow: 0px 10px 10px black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 185px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.button3 a{
+    text-decoration: none;
+    color: rgb(255, 0, 234);   
+
+    
+}
+
+.button3:hover a{
+        color:rgb(5, 236, 178);
+
+}
+
+.paragraph{
+    max-width: 1010px;
+    margin: auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 2px 8px black;
+}
+
+.top-text{
+    text-align: center;
+    font-size: 16px;
+    margin-right: 3em;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+a:hover{
+    color: #f50707;
+}
+
+.red-bar{
+    background: #b30000;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-top: 10px; */
+}
+
+.bottom-text{
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.star{
+    color: rgb(11, 149, 11);
+    font-weight: bold;
+}
+
+.rk{
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+
+.red{
+    text-decoration: underline;
+    color: #0404e9;
+}
+
+.lines{
+    border: 1px solid rgb(192, 186, 186);
+}
+
+.faq{
+    color: #042c56;
+    font-weight: bold;
+    margin-top: 120px;
+        /* box-shadow: 0px 0px 3px black; */
+     margin-left: 10px;
+     font-size: 30px;
+}
+
+.bold{
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+
+.bottom-line{
+    padding: 12px;
+}
+
+.king{
+    box-shadow: 0px 1px 2px black;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    box-shadow: 0px 5px 10px black;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer a{
+    color: white;
+    /* font-weight: bold; */
+}
+
+.link{
+    margin-left: auto;   
+    display: flex;
+    gap: 20px;
+}
+
+.link a{
+    color: white;
+}
+
+.link a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.bottom-whatsapp span{
+    margin-right: 20px;  
+    margin: 10px;
+    
+}
+
+.whatsapp a{
+    color: rgb(105, 16, 16);
+    border-left: 8px double red;
+    border-right: 8px double rgb(17, 0, 255);
+    padding: 2px;
+    color: green;
+    
+}
+
+.whatsapp a:hover{
+    font-weight: bold;
+    /* text-decoration: underline; */
+    border-right: none;
+}
+
+ .whatsapp a:hover:last-child{
+    border-right: none;
+} 
+
+
+.telegram a{
+    color: black;
+    font-weight: bold;
+    color: blue;
+    border-left: 8px double rgb(224, 7, 7);
+    border-right: 8px double rgb(25, 0, 255);
+    margin-left: 10px;
+    padding: 2px;
+}
+
+
+.telegram a:hover{
+    /* text-decoration: underline; */
+    text-decoration-color: #8b0000;
+    border-left: none;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    width: 20px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #555;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.horizontal{
+  border: 2px solid red;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    .header {
+        width: 100%;
+        padding: 12px 8px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 90px;
+        margin: 0 auto;
+        padding: 5px;
+        float: none;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .title h4 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar ul li a {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+
+    /* Heading text */
+    h2 {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0 8px;
+    }
+
+
+    /* Scroll area */
+    .scroll {
+        width: 100%;
+    }
+
+    .scroll-content {
+        font-size: 14px;
+    }
+
+    .scroll-content a {
+        padding: 0 8px;
+    }
+
+
+    /* Marquee */
+    .marquee {
+        width: 100%;
+    }
+
+    .marquee1 {
+        font-size: 14px;
+    }
+
+
+    /* Apply boxes */
+    .applay {
+        width: 100%;
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .grid div {
+        height: 70px;
+        box-shadow: 4px 4px 6px rgb(2, 29, 72);
+    }
+
+    .grid div a {
+        font-size: 14px;
+    }
+
+
+    /* Main 3 columns */
+    .main {
+        width: 100%;
+        margin: 30px auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .content {
+        padding: 12px 15px;
+    }
+
+    .content ul li a {
+        font-size: 17px;
+    }
+
+
+    /* Buttons */
+    .button1,
+    .button2,
+    .button3 {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 110px;
+    }
+
+
+    /* Paragraph */
+    .paragraph {
+        width: 95%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .top-text {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+
+    /* Table */
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    td {
+        padding: 8px 4px;
+    }
+
+
+    /* FAQ */
+    .faq {
+        font-size: 24px;
+        margin-top: 60px;
+        margin-left: 8px;
+    }
+
+    .bold {
+        font-size: 17px;
+        margin-left: 5px;
+    }
+
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* Social icons */
+    .social-icons {
+        gap: 25px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+
+    /* Red bar */
+    .red-bar {
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    .bottom-text {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .title h4 {
+        font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .grid div {
+        height: 65px;
+    }
+
+    .grid div a {
+        font-size: 13px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .content ul li a {
+        font-size: 16px;
+    }
+
+    .button1,
+    .button2,
+    .button3 {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    td {
+        font-size: 12px;
+        padding: 6px 3px;
+    }
+
+}
+
+
+/* Mobile menu button */
+.menu-btn {
+    display: none;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Close X button */
+.close-btn {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    
+
+    .menu-btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 99999;
+        overflow-y: auto;
+        margin: 0;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .close-btn {
+        display: block;
+        margin: 10px 15px 10px auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar ul li a {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="header-container">
+        
+        <div class="logo">
+            <a href="https://www.sarkariresult.com">
+            <img src="sarkari_result-removebg-preview.png" alt="Logo"></a>
+        </div>
+
+        <div class="title">
+            <h1><b style="color: rgb(37, 1, 167);" > <a href="https://www.youtube.com/@RoshanKumar-nw6uy">CHANDAN</a></b> PORTAL</h1>
+            <h4><b style="color: #fe0cce;" >WWW.SARKARIRESULT.COM</b></h4>
+        </div>
+    </div>
+</div>
+
+<div class="navbar">
+    <ul>
+        <li><a href="https://www.sarkariresult.com/">Home</a></li>
+        <li><a href="https://www.sarkariresult.com/latestjob/">Latest Jobs</a></li>
+        <li><a href="https://www.sarkariresult.com/result/">Results</a></li>
+        <li><a href="https://www.sarkariresult.com/admitcard/">Admit Card</a></li>
+        <li><a href="https://www.sarkariresult.com/answerkey/">Answer Key</a></li>
+        <li><a href="https://www.sarkariresult.com/syllabus/">Syllabus</a></li>
+        <li><a href="https://www.sarkariresult.com/search/">Search</a></li>
+        <li><a href="https://www.sarkariresult.com/contactus/">Contact Us</a></li>
+    </ul>
+</div>
+<br>
+
+<div align="center">
+<div align="Center">
+    <font size="-2">
+        <b><h2>Sarkari Result 2026 : SarkariResult.Com Sarkari Naukri Latest Jobs Online Form at Sarkari Results </h2></b>
+    </font>
+</div>
+<br>
+<div align="Center">
+<font size="-2">
+<b>
+<h2>
+<span style="color: #ff0000;">
+Welcome to No. 1<a href="#"><span class="education">Education</span></a> Portal SarkariResult.Com Sarkari Result 2026
+</span>
+</h2>
+</b>
+</font>
+</div>
+<br>
+
+
+<div class="scroll">
+    <div class="scroll-content">
+        <a href="https://play.google.com/store/apps/details?id=com.app.app14f269771c01" target="_blank">Sarkari Result Android Apps </a>
+        <a href="https://www.youtube.com/@RoshanKumar-nw6uy" target="_blank">Roshan Youtube Channel</a>
+        <a href="https://apps.apple.com/us/app/sarkari-result/id1051363935" target="_blank">Sarkari Result Apple / IOS Apps</a>
+        <a href="https://www.instagram.com/____ydv___roshan____/" target="_blank">Follow Instragram </a>
+     </div>
+</div>
+
+<div class="marquee">
+    <div class="marquee1">
+      <a href="https://www.sarkariresult.com/2026/nta-cuet-pg-2026/"><b style="color: rgb(3, 19, 20);"> PG 2026 Adit Card</b></a>
+      <a href="https://www.sarkariresult.com/upsc/upsc-cms-2026/"><b style="color: firebrick;"> CMS Online Form 2026</b></a>
+      <a href="sarkariresult.com/2026/bseb-12th-result-2026/"><b style="color: indigo;"> Board 12th Result 2026</b></a><br>
+      <a href="https://www.sarkariresult.com/2026/nta-ntet-2026/"><b style="color: rgb(106, 2, 23);">NTA NTET 2026 Online Form</b></a>
+      <a href="https://www.sarkariresult.com/2026/ctet-feb-2026/"><b style="color:#008fb3">CTET Feburary 2026 Answer Key</b></a>
+      <a href="https://www.sarkariresult.com/2026/bseb-10-result-2026/"><b style="color: #c400a7;">Bihar board 10th result 2026 Soon</b></a><br>
+      <a href="https://www.sarkariresult.com/force/army-bsc-nursing-mar26/"><b style="color: rgb(212, 11, 38);"> Bsc Nursing Admissions 2026</b></a>
+      <a href="https://www.sarkariresult.com/railway/rrb-alp-cen-01-2025/"><b style="color: rgb(3, 43, 118);">RRB ALP CEN 01/2025 Answer Key.</b></a>
+      <a href="https://www.sarkariresult.com/mp/mpesb-iti-training-officer-jan26/"><b style="color: rgb(2, 70, 91);">MPESB ITI Training officer Answer Key 2026</b></a>
+      </div> </div>
+
+<div class="applay">
+    <div class="grid">
+
+        <div class="box1">
+            <a href="https://www.sarkariresult.com/railway/rrb-group-d-cen-09-2025/">
+                Railway Group D <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box2">
+            <a href="https://www.sarkariresult.com/bank/rbi-assistant-feb26/">
+                RBI Assistant <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box3">
+            <a href="https://www.sarkariresult.com/2026/upbed-2026/">
+                UPBED 2026 <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box4">
+            <a href="https://www.sarkariresult.com/2026/nta-jeemain-session-2/">
+                NTA JEE MAIN <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box5">
+            <a href="https://www.sarkariresult.com/railway/rrb-group-d-cen-08-2024/">
+                RRB Group D CEN 08/2024 <br> Answer Key
+            </a>
+        </div>
+
+        <div class="box6">
+            <a href="https://www.sarkariresult.com/2026/army-agniveer-2026/">
+                Army Agniveer <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box7">
+            <a href="https://www.sarkariresult.com/2026/nta-neet-ug-2026/">
+                NEET UG 2026 <br> Apply Online
+            </a>
+        </div>
+
+        <div class="box8">
+            <a href="https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/">
+                UPSC IAS PRE <br> Apply Online
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="column">
+        <div class="heading">Result</div>
+        <div class="content">
+            <ul>
+                <li><a href="https://www.sarkariresult.com/result/">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">Delhi DDA JSA 2025 Result</a></li>
+                <li><a href="#">UPSC Forest Services 2025</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">RBI Grade B Phase II Result</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">LIC AAO Assistant Engineer Phase II Result 2026</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+            </ul>
+            <button class="button1"><a href="https://sarkariresult.com.cm/result/">Click Mi</a></button>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="heading">Admit Card</div>
+        <div class="content">
+            <ul>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">UP Police SI Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+
+            </ul>
+            <button class="button2"><a href="https://sarkariresult.com.cm/admit-card/">Click Mi</a></button>
+            
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="heading">Latest Jobs</div>
+        <div class="content">
+            <ul>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">RBI Office Attendant Admit Card</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">BPSC 33 Civil Form 2026</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">Indian Airforce 01/2027</a></li>
+                <li><a href="#">AIIMS NORCET 2026</a></li>
+                <li><a href="#">UPSC Online Form 2026</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">SSC Delhi Police Vacancy</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+                <li><a href="#">MPPSC SET Admit Card</a></li>
+            </ul>
+            <button class="button3"><a href="https://sarkariresult.com.cm/latest-jobs/">Click Mi</a></button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="paragraph">
+    <p class="top-text">
+        <u>Sarkari Result 2025</u> : Find Latest Sarkari Job Vacancies And Sarkari Exam Results At Sarkariresult.Com.Cm Get All The Information<br> You Need On Govt Jobs And Online Form, Exam, Results, Admit Card In One Place.
+        <br><br>
+        <b><span class="star">******</span> <span style="color:black;">Top</span> <span style="color:red;">Sarkari <span class="rk">Result</span> <span class="red">Pages</span> </span><span class="star" >******</span></b>
+    </p>
+
+    <table>
+        <tr>
+            <td><a href="https://sarkariresult.com.cm/result/">Bharat Result</a></td>
+            <td><a href="https://sarkariresult.com.cm/cisf-constable-fire-dv-pet-pst-exam-date/">Up Police Result</a></td>
+            <td><a href="https://sarkariresult.com.cm/bihar-police-csbc-constable-final-result-2025/">Bihar Police Result</a></td>
+        </tr>
+        <tr>
+            <td>Sarkari Exam</td>
+            <td>SarkariResult Hindi</td>
+            <td>Sarkari Result Ntpc</td>
+        </tr>
+        <tr>
+            <td><a href="https://sarkariresult.com.cm/sarkari-result-2024/">Sarkari Result 2025</a></td>
+            <td><a href="https://sarkariresult.com.cm/">Sarkari Result</a></td>
+            <td>Sarkari</td>
+        </tr>
+        <tr>
+            <td>Sarkari Naukri</td>
+            <td>Sarkari Result 10th</td>
+            <td>Sarkari Result Center</td>
+        </tr>
+        <tr>
+            <td>Sarkari Result 10+2</td>
+            <td><a href="https://sarkariresult.com.cm/">Sarkariresult</a></td>
+            <td>Sarkari Result SSC</td>
+        </tr>
+    </table>
+  
+
+    <div class="lines">
+    <div class="red-bar">
+        Sarkari Results 10+2 Latest Job
+    </div>
+
+    <p class="bottom-text">
+        Most Recent Sarkari Work, Sarkari Test Result, Most Recent On The Web And Disconnected Structure, Concede Card, Prospectus, Affirmation, Answer Key, Grant, Notice Etc. If You Need To Get Refreshes Connected With Sarkari Occupations On Sarkari Result.Com.Cm Like Concede Warning Like Govt. Test, Sarkari Result, Most Recent Bord Result, Bihar Result Tenth And So On You Could Sarkari Result 10+2 Most Recent Occupation At Any Point Website Page Consistently.
+    </p>
+
+     <div class="red-bar">
+        Sarkari Results
+    </div>
+
+    <p class="bottom-text">
+       <b> Sarkari Results:</b> Sarkari Results is a famous site in India that gives data about sarkari work tests, sarkari result 2025, and other related refreshes. It is one of the notable entries that many work searchers use to secure data about government position opening, concede cards, test dates, and results.
+    </p>
+
+    <div class="red-bar">
+        Sarkari Result Bihar
+    </div>
+
+    <p class="bottom-text">
+        Each data connected with Sarkari Test Result in Bihar can be seen as here like: OFSS Bihar, Bihar Board tenth Outcome, Sarkari Result Bihar Board 2025, Bihar Board Matric 2025, Bihar Police 2025, Bihar Board tenth, Bihar Ssc, Bihar Je, bihar Common Court, Sarkari Result Bihar Board result, Bihar Work, Bihar Result, bihar 10+2 Most recent Work, Bihar Sarkari Result , Bihar Sarkari Test, bihar Govt Work, Concede Card, Bihar Sarkari Result, eleventh Affirmation And so forth.
+    </p>
+
+    <div class="red-bar">
+        sarkari result Hindi
+    </div>
+
+    <p class="bottom-text">
+        Uttar Pradesh (sarkariresult.com.cm UP Board) is a state where lakhs of young people give Sarkari Test consistently to land government positions, so here UP Board plays a significant part, so here you will get Sarkari Result Up Board 2024, Up Barricade Result , Board 2025,Up Board test result, Sarkari Result Up Board Class tenth, Up Board Result Date, Sarkari Result Up Board 2024 In Hindi and so on. Will continue to get refreshes.
+    </p>
+
+    <div class="red-bar">
+        sarkariresult Official Website
+    </div>
+
+  <p class="bottom-text">
+    <b>SarkariResult.com.cm </b>is the official website of Sarkari Result , presenting all the latest updates such as results, online forms, job notifications, exam results 2025, employment news, information in Hindi, government job details, and important notices and updates.
+
+<b>This website is not associated with official or Government websites. All information provided is for general informational purposes only and Users of our website can not use content for any legal purposes and it is hereby advised to all visitors to verify information from official notifications of concerning department before relying on it. If any errors are found in the uploaded content here on website, the website should to be notified through our contact us page..</b>
+    </p>
+
+
+    <div class="king">
+    <div class="faq-sarkari">
+    <p class="faq">FAQ – Sarkari Result</p><br><br>
+
+    <p class="bold">
+        What is Sarkari Result?
+    </p>
+
+     <p class="bottom-line">
+        Sarkari Result : Find Latest Sarkari Job Vacancies And Sarkari Exam Results At Sarkariresult.Com.Cm Get All The Information You Need On Govt Jobs And Online From, Exam, Results, Admit Card In One Place.
+    </p>
+
+    <p class="bold">
+        How can I check the latest government job vacancies?
+    </p>
+
+    <p class="bottom-line">
+        You can visit our official Sarkari Result website which is sarkariresult.com.cm and navigate to the “Latest Jobs” section to check the latest government job vacancies.
+    </p>
+
+     <p class="bold">
+        Is Sarkari Result free to use?
+    </p>
+
+    <p class="bottom-line">
+        Yes, Sarkari Result is completely free to use. You can access all the information on the website without any charges.
+    </p>
+        
+
+    <p class="bottom-whatsapp">
+     <span class="whatsapp"><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></span> 
+        <span class="telegram"> <a href="https://telegram.org/" target="_blank">Telegram</a></span>
+    </p>
+    <br>
+
+      <!-- footer -->
+    <footer>
+        <div class="footer">
+        Copyright © 2009 - 2025 |<a href="https://sarkariresult.com.cm/" >SarkariResult.com.cm</a>
+
+        <div class="link">
+            <a href="https://sarkariresult.com.cm/">Home</a>
+            <a href="https://sarkariresult.com.cm/contact/">Contact</a>
+            <a href="https://sarkariresult.com.cm/privacy-policy/">Privacy Policy</a>
+            <a href="https://sarkariresult.com.cm/disclaimer/">Disclaimer</a>
+        </div>
+
+        <div class="social-icons">
+        <a href="https://www.instagram.com/____ydv___roshan____/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/1KjcMv1LjQ/" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+        </div>
+    </footer>
+ <div class="horizontal">
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
